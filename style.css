@@ -1,4 +1,4 @@
-.cc-selector input{
+.stack-selector input{
     margin:0;padding:0;
     -webkit-appearance:none;
        -moz-appearance:none;
@@ -8,13 +8,13 @@
 .azure{background-image:url(images/azure.png);}
 .gcp{background-image:url(images/gcp.png);}
 
-.cc-selector input:active +.drinkcard-cc{opacity: .9;}
-.cc-selector input:checked +.drinkcard-cc{
+.stack-selector input:active +.cloud-provider-stack{opacity: .9;}
+.stack-selector input:checked +.cloud-provider-stack{
     -webkit-filter: none;
        -moz-filter: none;
             filter: none;
 }
-.drinkcard-cc{
+.cloud-provider-stack{
     cursor:pointer;
     background-size:contain;
     background-repeat:no-repeat;
@@ -27,7 +27,7 @@
        -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
             filter: brightness(1.8) grayscale(1) opacity(.7);
 }
-.drinkcard-cc:hover{
+.cloud-provider-stack:hover{
     -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
        -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
             filter: brightness(1.2) grayscale(.5) opacity(.9);
