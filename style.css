@@ -8,9 +8,13 @@
 .azure{background-image:url(images/azure.png);}
 .gcp{background-image:url(images/gcp.png);}
 
-.stack-selector input:active +.cloud-provider-stack{opacity: .9;}
+.stack-selector input:active +.cloud-provider-stack{opacity: .9; border:1px solid blue;  border-radius: 10px;
+}
 .stack-selector input:checked +.cloud-provider-stack{
-    -webkit-filter: none;
+   border:1px solid blue;
+   box-shadow: 5px 5px 5px #888888;
+   border-radius: 10px;
+   -webkit-filter: none;
        -moz-filter: none;
             filter: none;
 }
@@ -19,7 +23,7 @@
     background-size:contain;
     background-repeat:no-repeat;
     display:inline-block;
-    width:100px;height:150px;
+    width:150px;height:110px;
     -webkit-transition: all 100ms ease-in;
        -moz-transition: all 100ms ease-in;
             transition: all 100ms ease-in;
@@ -28,6 +32,9 @@
             filter: brightness(1.8) grayscale(1) opacity(.7);
 }
 .cloud-provider-stack:hover{
+   border:1px solid blue;
+   border-radius: 10px;
+   box-shadow: 5px 5px 5px #888888;  
     -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
        -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
             filter: brightness(1.2) grayscale(.5) opacity(.9);
