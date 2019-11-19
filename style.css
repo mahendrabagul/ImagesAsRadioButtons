@@ -8,12 +8,11 @@
 .azure{background-image:url(images/azure.png);}
 .gcp{background-image:url(images/gcp.png);}
 
-.stack-selector input:active +.cloud-provider-stack{opacity: .9; border:1px solid blue;  border-radius: 10px;
+.stack-selector input:active +.cloud-provider-stack{opacity: 1; border:1px solid blue; 
 }
 .stack-selector input:checked +.cloud-provider-stack{
    border:1px solid blue;
    box-shadow: 5px 5px 5px #888888;
-   border-radius: 10px;
    -webkit-filter: none;
        -moz-filter: none;
             filter: none;
@@ -27,15 +26,14 @@
     -webkit-transition: all 100ms ease-in;
        -moz-transition: all 100ms ease-in;
             transition: all 100ms ease-in;
-    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
-       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
-            filter: brightness(1.8) grayscale(1) opacity(.7);
+    /* -webkit-filter: brightness(1.8) grayscale(1) opacity(1);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(1);
+            filter: brightness(1.8) grayscale(1) opacity(1); */
 }
 .cloud-provider-stack:hover{
    border:1px solid blue;
-   border-radius: 10px;
    box-shadow: 5px 5px 5px #888888;  
-    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
-       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
-            filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(1);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(1);
+            filter: brightness(1.2) grayscale(.5) opacity(1);
 }
